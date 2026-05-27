@@ -105,6 +105,24 @@
             </div>
         </section>
 
+        <section id="recommendations" class="mb-24 pt-16">
+            <h3 class="text-3xl font-header font-bold mb-10 text-slate-900 uppercase tracking-tight">Recommendations</h3>
+            <div id="carousel" class="relative bg-white border border-slate-200 p-8 rounded-3xl shadow-sm min-h-[160px] flex items-center">
+                <div class="testimonial-slide active">
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed">"Sylvana is an incredibly reliable professional. Her ability to streamline complex accounting workflows during her tenure at Kostyniuk & Greenside Lawyers was transformative."</p>
+                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— Colleague, Legal Industry</span>
+                </div>
+                <div class="testimonial-slide hidden">
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed">"An absolute expert in financial operations. She consistently delivered accurate financial insights that were crucial for our annual budgeting process."</p>
+                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— Director, Safedesign Apparel</span>
+                </div>
+                <div class="testimonial-slide hidden">
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed">"Sylvana’s operational oversight and dedication to compliance ensured our clinical workflows ran with maximum efficiency and patient-focused care."</p>
+                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— Management, Eyecademy</span>
+                </div>
+            </div>
+        </section>
+
         <section id="education" class="mb-20">
             <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">Education</h3>
             <div class="grid md:grid-cols-2 gap-6">
@@ -169,6 +187,21 @@
             const body = document.body;
             body.dataset.lang = body.dataset.lang === 'en' ? 'es' : 'en';
         }
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        
+        function showSlide(index) {
+            slides.forEach((s, i) => {
+                s.classList.toggle('hidden', i !== index);
+                s.classList.toggle('active', i === index);
+            });
+        }
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
     </script>
 </body>
 </html>
