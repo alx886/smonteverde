@@ -10,6 +10,7 @@
         body { font-family: 'Inter', sans-serif; }
         .font-header { font-family: 'Outfit', sans-serif; }
         [data-lang="es"] .lang-en, [data-lang="en"] .lang-es { display: none !important; }
+        .job-content { transition: max-height 0.3s ease-out, opacity 0.3s ease-in; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900" data-lang="en">
@@ -84,31 +85,103 @@
 
         <section id="experience" class="mb-20">
             <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">Career Trajectory</h3>
-            <div class="space-y-10">
-                <div class="group border-l-4 border-slate-200 hover:border-amber-600 transition-all pl-8 py-4">
-                    <h4 class="text-xl font-header font-bold">Office Manager | Eyecademy</h4>
-                    <p class="text-amber-700 font-medium text-sm mb-2">12/2025 – Present</p>
-                    <p class="text-slate-600">Direct comprehensive clinic operations and practitioner scheduling to maximize throughput and ensure high patient satisfaction.</p>
+            <div class="space-y-6">
+                <!-- Eyecademy -->
+                <div class="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                    <button onclick="toggleJob('job1')" class="w-full text-left p-6 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition">
+                        <div>
+                            <h4 class="text-xl font-header font-bold text-slate-900">Office Manager | Eyecademy</h4>
+                            <p class="text-amber-700 font-medium text-sm">12/2025 – Present</p>
+                        </div>
+                        <span class="text-slate-400 font-bold text-2xl">+</span>
+                    </button>
+                    <div id="job1" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li>Manage day-to-day clinical operations and administrative workflows.</li>
+                            <li>Oversee patient intake, billing procedures, and insurance processing.</li>
+                            <li>Coordinate practitioner scheduling across multi-location clinics.</li>
+                            <li>Maintain health and safety regulatory compliance.</li>
+                            <li>Optimize clinic resource procurement and inventory management.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="group border-l-4 border-slate-200 hover:border-amber-600 transition-all pl-8 py-4">
-                    <h4 class="text-xl font-header font-bold">Accounting Clerk | Kostyniuk & Greenside Lawyers</h4>
-                    <p class="text-slate-500 font-medium text-sm mb-2">09/2021 – 11/2025</p>
-                    <p class="text-slate-600">Led digitization of client records and optimized accounting workflows, significantly reducing retrieval times and improving productivity.</p>
+
+                <!-- Kostyniuk -->
+                <div class="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                    <button onclick="toggleJob('job2')" class="w-full text-left p-6 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition">
+                        <div>
+                            <h4 class="text-xl font-header font-bold text-slate-900">Accounting Clerk | Kostyniuk & Greenside Lawyers</h4>
+                            <p class="text-slate-500 font-medium text-sm">09/2021 – 11/2025</p>
+                        </div>
+                        <span class="text-slate-400 font-bold text-2xl">+</span>
+                    </button>
+                    <div id="job2" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li>Spearheaded digital transformation of client records and archival systems.</li>
+                            <li>Managed full-cycle accounts payable and receivable for legal operations.</li>
+                            <li>Ensured accurate data entry, financial reconciliation, and ledger upkeep.</li>
+                            <li>Collaborated with legal counsel to improve departmental billing efficiency.</li>
+                            <li>Handled payroll processing and benefits administration.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="group border-l-4 border-slate-200 hover:border-amber-600 transition-all pl-8 py-4">
-                    <h4 class="text-xl font-header font-bold">Support Officer, Digital Banking | EQ Bank</h4>
-                    <p class="text-slate-500 font-medium text-sm mb-2">01/2021 – 08/2021</p>
-                    <p class="text-slate-600">Conducted processing of complex financial transfer requests for registered accounts (TFSA, RRSP) with near 100% accuracy.</p>
+
+                <!-- EQ Bank -->
+                <div class="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                    <button onclick="toggleJob('job3')" class="w-full text-left p-6 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition">
+                        <div>
+                            <h4 class="text-xl font-header font-bold text-slate-900">Support Officer, Digital Banking | EQ Bank</h4>
+                            <p class="text-slate-500 font-medium text-sm">01/2021 – 08/2021</p>
+                        </div>
+                        <span class="text-slate-400 font-bold text-2xl">+</span>
+                    </button>
+                    <div id="job3" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li>Executed complex financial transactions and transfer requests for RRSP and TFSA accounts.</li>
+                            <li>Maintained rigorous adherence to FINTRAC and banking compliance standards.</li>
+                            <li>Resolved client discrepancies through analytical problem solving.</li>
+                            <li>Operated within high-volume digital banking environments.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="group border-l-4 border-slate-200 hover:border-amber-600 transition-all pl-8 py-4">
-                    <h4 class="text-xl font-header font-bold">A/P, A/R & Payroll Analyst | Safedesign Apparel LTD.</h4>
-                    <p class="text-slate-500 font-medium text-sm mb-2">07/2020 – 11/2020</p>
-                    <p class="text-slate-600">Managed full-cycle invoices, comprehensive bi-weekly payroll, and provided month-end financial reporting insights.</p>
+
+                <!-- Safedesign -->
+                <div class="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                    <button onclick="toggleJob('job4')" class="w-full text-left p-6 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition">
+                        <div>
+                            <h4 class="text-xl font-header font-bold text-slate-900">A/P, A/R & Payroll Analyst | Safedesign Apparel LTD.</h4>
+                            <p class="text-slate-500 font-medium text-sm">07/2020 – 11/2020</p>
+                        </div>
+                        <span class="text-slate-400 font-bold text-2xl">+</span>
+                    </button>
+                    <div id="job4" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li>Processed end-to-end full-cycle invoices and vendor payments.</li>
+                            <li>Managed bi-weekly payroll cycle for diverse employee groups.</li>
+                            <li>Prepared month-end financial reporting and reconciliation summaries.</li>
+                            <li>Monitored cash flow projections and budget variances.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="group border-l-4 border-slate-200 hover:border-amber-600 transition-all pl-8 py-4">
-                    <h4 class="text-xl font-header font-bold">Operations Manager | Happy Vaper</h4>
-                    <p class="text-slate-500 font-medium text-sm mb-2">02/2012 – 09/2019</p>
-                    <p class="text-slate-600">Managed a $500K annual budget, centralized bookkeeping practices, and directed inventory strategy for over 3,000 active clients.</p>
+
+                <!-- Happy Vaper -->
+                <div class="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                    <button onclick="toggleJob('job5')" class="w-full text-left p-6 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition">
+                        <div>
+                            <h4 class="text-xl font-header font-bold text-slate-900">Operations Manager | Happy Vaper</h4>
+                            <p class="text-slate-500 font-medium text-sm">02/2012 – 09/2019</p>
+                        </div>
+                        <span class="text-slate-400 font-bold text-2xl">+</span>
+                    </button>
+                    <div id="job5" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
+                        <ul class="list-disc pl-5 space-y-2 text-sm">
+                            <li>Oversaw annual budget of $500K, including cost control and operational spending.</li>
+                            <li>Centralized bookkeeping practices to improve financial tracking.</li>
+                            <li>Directed inventory procurement and supply chain relationships.</li>
+                            <li>Managed customer success for a database of 3,000+ active clients.</li>
+                            <li>Developed standardized operational protocols for regional staff.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,6 +267,18 @@
         function toggleLang() {
             const body = document.body;
             body.dataset.lang = body.dataset.lang === 'en' ? 'es' : 'en';
+        }
+
+        function toggleJob(id) {
+            const content = document.getElementById(id);
+            const isHidden = content.style.maxHeight === '0px' || content.style.maxHeight === '';
+            if (isHidden) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.opacity = '1';
+            } else {
+                content.style.maxHeight = '0px';
+                content.style.opacity = '0';
+            }
         }
 
         let currentSlide = 0;
