@@ -9,6 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .font-header { font-family: 'Outfit', sans-serif; }
+        /* Language Toggle Logic */
         [data-lang="es"] .lang-en, [data-lang="en"] .lang-es { display: none !important; }
         .job-content { transition: max-height 0.3s ease-out, opacity 0.3s ease-in; }
     </style>
@@ -19,11 +20,21 @@
         <nav class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
             <span class="text-2xl font-extrabold tracking-tighter text-white font-header uppercase">SYLVANA MONTEVERDE</span>
             <div class="flex items-center gap-8 text-sm font-semibold uppercase tracking-widest text-slate-300">
-                <a href="#about" class="hover:text-amber-400 transition">Profile</a>
-                <a href="#skills" class="hover:text-amber-400 transition">Skills</a>
-                <a href="#experience" class="hover:text-amber-400 transition">Experience</a>
-                <a href="#education" class="hover:text-amber-400 transition">Education</a>
-                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+                <a href="#about" class="hover:text-amber-400 transition">
+                    <span class="lang-en">Profile</span><span class="lang-es">Perfil</span>
+                </a>
+                <a href="#skills" class="hover:text-amber-400 transition">
+                    <span class="lang-en">Skills</span><span class="lang-es">Habilidades</span>
+                </a>
+                <a href="#experience" class="hover:text-amber-400 transition">
+                    <span class="lang-en">Experience</span><span class="lang-es">Experiencia</span>
+                </a>
+                <a href="#education" class="hover:text-amber-400 transition">
+                    <span class="lang-en">Education</span><span class="lang-es">Educación</span>
+                </a>
+                <a href="#contact" class="hover:text-amber-400 transition">
+                    <span class="lang-en">Contact</span><span class="lang-es">Contacto</span>
+                </a>
                 <button onclick="toggleLang()" class="px-3 py-1 border border-slate-500 rounded-full text-[10px] text-white hover:bg-slate-700">EN/ES</button>
             </div>
         </nav>
@@ -38,70 +49,91 @@
                 </div>
             </div>
             <div class="md:col-span-3">
-                <span class="text-amber-600 font-bold tracking-widest text-sm uppercase mb-4 block">14+ Years of Expertise</span>
+                <span class="text-amber-600 font-bold tracking-widest text-sm uppercase mb-4 block">
+                    <span class="lang-en">14+ Years of Expertise</span>
+                    <span class="lang-es">Más de 14 años de experiencia</span>
+                </span>
                 <h1 class="text-5xl font-header font-extrabold text-slate-900 mb-6 lang-en">Strategic Operations & Financial Leader</h1>
                 <h1 class="text-5xl font-header font-extrabold text-slate-900 mb-6 lang-es">Liderazgo en Operaciones y Finanzas Estratégicas</h1>
-                <p class="text-lg text-slate-600 leading-relaxed mb-8">Results-driven professional with over 14 years of diversified experience managing complex financial and administrative workflows. Expert in driving departmental productivity through digital transformation and operational excellence.</p>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    <span class="lang-en">Results-driven professional with over 14 years of diversified experience managing complex financial and administrative workflows. Expert in driving departmental productivity through digital transformation and operational excellence.</span>
+                    <span class="lang-es">Profesional orientada a resultados con más de 14 años de experiencia diversificada gestionando flujos de trabajo financieros y administrativos complejos. Experta en impulsar la productividad departamental mediante la transformación digital y la excelencia operativa.</span>
+                </p>
                 <div class="flex gap-4">
-                    <a href="https://www.linkedin.com/in/sylvana-monteverde/" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-700 transition inline-block">View LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/sylvana-monteverde/" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-700 transition inline-block">
+                        <span class="lang-en">View LinkedIn</span><span class="lang-es">Ver LinkedIn</span>
+                    </a>
                     <a href="https://alx886.github.io/smonteverde/Sylvana%20Monteverde%20Resume%20May%202026.pdf" target="_blank" class="flex items-center gap-2 bg-amber-100 text-amber-900 px-6 py-4 rounded-xl font-bold hover:bg-amber-200 transition">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.48 9c0-1.77-.77-3.17-2.52-3.17H9v6.33h2.48c1.75 0 2.52-1.4 2.52-3.16zM10.5 10.25h.98c.67 0 1.02.48 1.02 1.58 0 1.1-.35 1.58-1.02 1.58h-.98v-3.16zM16 16.5h-1.5V7.5H14l-1.5 1.5v-1l1.5-1.5h2V16.5z"/>
-                        </svg>
-                        Download Resume
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.48 9c0-1.77-.77-3.17-2.52-3.17H9v6.33h2.48c1.75 0 2.52-1.4 2.52-3.16zM10.5 10.25h.98c.67 0 1.02.48 1.02 1.58 0 1.1-.35 1.58-1.02 1.58h-.98v-3.16zM16 16.5h-1.5V7.5H14l-1.5 1.5v-1l1.5-1.5h2V16.5z"/></svg>
+                        <span class="lang-en">Download Resume</span><span class="lang-es">Descargar CV</span>
                     </a>
                 </div>
             </div>
         </section>
 
         <section id="skills" class="mb-24">
-            <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">Core Competencies</h3>
+            <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">
+                <span class="lang-en">Core Competencies</span><span class="lang-es">Competencias Clave</span>
+            </h3>
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-amber-700 mb-2">Languages</h4>
+                    <h4 class="font-bold text-amber-700 mb-2">
+                        <span class="lang-en">Languages</span><span class="lang-es">Idiomas</span>
+                    </h4>
                     <ul class="text-slate-600 text-sm space-y-1">
-                        <li>• English (Fluent)</li>
-                        <li>• Spanish (Native)</li>
+                        <li><span class="lang-en">• English (Fluent)</span><span class="lang-es">• Inglés (Fluido)</span></li>
+                        <li><span class="lang-en">• Spanish (Native)</span><span class="lang-es">• Español (Nativo)</span></li>
                     </ul>
                 </div>
                 <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-amber-700 mb-2">Financial Systems</h4>
+                    <h4 class="font-bold text-amber-700 mb-2">
+                        <span class="lang-en">Financial Systems</span><span class="lang-es">Sistemas Financieros</span>
+                    </h4>
                     <ul class="text-slate-600 text-sm space-y-1">
-                        <li>• Blue Link ERP & QuickBooks</li>
-                        <li>• Payroll & Tax Administration</li>
-                        <li>• Account Reconciliation</li>
+                        <li><span class="lang-en">• Blue Link ERP & QuickBooks</span><span class="lang-es">• Blue Link ERP y QuickBooks</span></li>
+                        <li><span class="lang-en">• Payroll & Tax Administration</span><span class="lang-es">• Nómina y Administración de Impuestos</span></li>
+                        <li><span class="lang-en">• Account Reconciliation</span><span class="lang-es">• Conciliación de Cuentas</span></li>
                     </ul>
                 </div>
                 <div class="bg-white p-6 border border-slate-200 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-amber-700 mb-2">Operational Edge</h4>
+                    <h4 class="font-bold text-amber-700 mb-2">
+                        <span class="lang-en">Operational Edge</span><span class="lang-es">Ventaja Operativa</span>
+                    </h4>
                     <ul class="text-slate-600 text-sm space-y-1">
-                        <li>• Digital Document Strategy</li>
-                        <li>• Inventory Procurement</li>
-                        <li>• Regulatory Compliance</li>
+                        <li><span class="lang-en">• Digital Document Strategy</span><span class="lang-es">• Estrategia de Documentos Digitales</span></li>
+                        <li><span class="lang-en">• Inventory Procurement</span><span class="lang-es">• Adquisición de Inventario</span></li>
+                        <li><span class="lang-en">• Regulatory Compliance</span><span class="lang-es">• Cumplimiento Normativo</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="experience" class="mb-20">
-            <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">Career Trajectory</h3>
+            <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">
+                <span class="lang-en">Career Trajectory</span><span class="lang-es">Trayectoria Profesional</span>
+            </h3>
             <div class="space-y-6">
                 <!-- Eyecademy -->
                 <div class="border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                     <button onclick="toggleJob('job1')" class="w-full text-left p-6 flex justify-between items-center bg-slate-50 hover:bg-slate-100 transition">
                         <div>
                             <h4 class="text-xl font-header font-bold text-slate-900">Office Manager | Eyecademy</h4>
-                            <p class="text-amber-700 font-medium text-sm">12/2025 – Present</p>
+                            <p class="text-amber-700 font-medium text-sm">12/2025 – <span class="lang-en">Present</span><span class="lang-es">Presente</span></p>
                         </div>
                         <span class="text-slate-400 font-bold text-2xl">+</span>
                     </button>
                     <div id="job1" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
                         <ul class="list-disc pl-5 space-y-2 text-sm">
-                            <li>Manage day-to-day clinical operations and administrative workflows.</li>
-                            <li>Oversee patient intake, billing procedures, and insurance processing.</li>
-                            <li>Coordinate practitioner scheduling across multi-location clinics.</li>
-                            <li>Maintain health and safety regulatory compliance.</li>
-                            <li>Optimize clinic resource procurement and inventory management.</li>
+                            <li class="lang-en">Manage day-to-day clinical operations and administrative workflows.</li>
+                            <li class="lang-es">Gestionar las operaciones clínicas y flujos de trabajo administrativos diarios.</li>
+                            <li class="lang-en">Oversee patient intake, billing procedures, and insurance processing.</li>
+                            <li class="lang-es">Supervisar la recepción de pacientes, los procedimientos de facturación y el procesamiento de seguros.</li>
+                            <li class="lang-en">Coordinate practitioner scheduling across multi-location clinics.</li>
+                            <li class="lang-es">Coordinar la programación de los profesionales en clínicas multisede.</li>
+                            <li class="lang-en">Maintain health and safety regulatory compliance.</li>
+                            <li class="lang-es">Mantener el cumplimiento normativo de salud y seguridad.</li>
+                            <li class="lang-en">Optimize clinic resource procurement and inventory management.</li>
+                            <li class="lang-es">Optimizar la adquisición de recursos de la clínica y la gestión de inventario.</li>
                         </ul>
                     </div>
                 </div>
@@ -117,11 +149,16 @@
                     </button>
                     <div id="job2" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
                         <ul class="list-disc pl-5 space-y-2 text-sm">
-                            <li>Spearheaded digital transformation of client records and archival systems.</li>
-                            <li>Managed full-cycle accounts payable and receivable for legal operations.</li>
-                            <li>Ensured accurate data entry, financial reconciliation, and ledger upkeep.</li>
-                            <li>Collaborated with legal counsel to improve departmental billing efficiency.</li>
-                            <li>Handled payroll processing and benefits administration.</li>
+                            <li class="lang-en">Spearheaded digital transformation of client records and archival systems.</li>
+                            <li class="lang-es">Liderar la transformación digital de los registros de clientes y los sistemas de archivo.</li>
+                            <li class="lang-en">Managed full-cycle accounts payable and receivable for legal operations.</li>
+                            <li class="lang-es">Gestionar el ciclo completo de cuentas por pagar y por cobrar para operaciones legales.</li>
+                            <li class="lang-en">Ensured accurate data entry, financial reconciliation, and ledger upkeep.</li>
+                            <li class="lang-es">Asegurar la entrada de datos precisa, la conciliación financiera y el mantenimiento del libro mayor.</li>
+                            <li class="lang-en">Collaborated with legal counsel to improve departmental billing efficiency.</li>
+                            <li class="lang-es">Colaborar con asesores legales para mejorar la eficiencia de facturación del departamento.</li>
+                            <li class="lang-en">Handled payroll processing and benefits administration.</li>
+                            <li class="lang-es">Manejar el procesamiento de nómina y la administración de beneficios.</li>
                         </ul>
                     </div>
                 </div>
@@ -137,10 +174,14 @@
                     </button>
                     <div id="job3" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
                         <ul class="list-disc pl-5 space-y-2 text-sm">
-                            <li>Executed complex financial transactions and transfer requests for RRSP and TFSA accounts.</li>
-                            <li>Maintained rigorous adherence to FINTRAC and banking compliance standards.</li>
-                            <li>Resolved client discrepancies through analytical problem solving.</li>
-                            <li>Operated within high-volume digital banking environments.</li>
+                            <li class="lang-en">Executed complex financial transactions and transfer requests for RRSP and TFSA accounts.</li>
+                            <li class="lang-es">Ejecutar transacciones financieras complejas y solicitudes de transferencia para cuentas RRSP y TFSA.</li>
+                            <li class="lang-en">Maintained rigorous adherence to FINTRAC and banking compliance standards.</li>
+                            <li class="lang-es">Mantener una estricta adhesión a FINTRAC y a los estándares de cumplimiento bancario.</li>
+                            <li class="lang-en">Resolved client discrepancies through analytical problem solving.</li>
+                            <li class="lang-es">Resolver discrepancias de clientes mediante la resolución analítica de problemas.</li>
+                            <li class="lang-en">Operated within high-volume digital banking environments.</li>
+                            <li class="lang-es">Operar dentro de entornos de banca digital de alto volumen.</li>
                         </ul>
                     </div>
                 </div>
@@ -156,10 +197,14 @@
                     </button>
                     <div id="job4" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
                         <ul class="list-disc pl-5 space-y-2 text-sm">
-                            <li>Processed end-to-end full-cycle invoices and vendor payments.</li>
-                            <li>Managed bi-weekly payroll cycle for diverse employee groups.</li>
-                            <li>Prepared month-end financial reporting and reconciliation summaries.</li>
-                            <li>Monitored cash flow projections and budget variances.</li>
+                            <li class="lang-en">Processed end-to-end full-cycle invoices and vendor payments.</li>
+                            <li class="lang-es">Procesar facturas y pagos a proveedores de ciclo completo.</li>
+                            <li class="lang-en">Managed bi-weekly payroll cycle for diverse employee groups.</li>
+                            <li class="lang-es">Gestionar el ciclo de nómina quincenal para grupos diversos de empleados.</li>
+                            <li class="lang-en">Prepared month-end financial reporting and reconciliation summaries.</li>
+                            <li class="lang-es">Preparar informes financieros de fin de mes y resúmenes de conciliación.</li>
+                            <li class="lang-en">Monitored cash flow projections and budget variances.</li>
+                            <li class="lang-es">Monitorear las proyecciones de flujo de caja y las variaciones presupuestarias.</li>
                         </ul>
                     </div>
                 </div>
@@ -175,11 +220,16 @@
                     </button>
                     <div id="job5" class="job-content max-h-0 opacity-0 px-6 pb-6 text-slate-600">
                         <ul class="list-disc pl-5 space-y-2 text-sm">
-                            <li>Oversaw annual budget of $500K, including cost control and operational spending.</li>
-                            <li>Centralized bookkeeping practices to improve financial tracking.</li>
-                            <li>Directed inventory procurement and supply chain relationships.</li>
-                            <li>Managed customer success for a database of 3,000+ active clients.</li>
-                            <li>Developed standardized operational protocols for regional staff.</li>
+                            <li class="lang-en">Oversaw annual budget of $500K, including cost control and operational spending.</li>
+                            <li class="lang-es">Supervisar un presupuesto anual de $500K, incluyendo control de costos y gastos operativos.</li>
+                            <li class="lang-en">Centralized bookkeeping practices to improve financial tracking.</li>
+                            <li class="lang-es">Centralizar prácticas contables para mejorar el seguimiento financiero.</li>
+                            <li class="lang-en">Directed inventory procurement and supply chain relationships.</li>
+                            <li class="lang-es">Dirigir la adquisición de inventario y las relaciones de la cadena de suministro.</li>
+                            <li class="lang-en">Managed customer success for a database of 3,000+ active clients.</li>
+                            <li class="lang-es">Gestionar el éxito del cliente para una base de datos de más de 3,000 clientes activos.</li>
+                            <li class="lang-en">Developed standardized operational protocols for regional staff.</li>
+                            <li class="lang-es">Desarrollar protocolos operativos estandarizados para el personal regional.</li>
                         </ul>
                     </div>
                 </div>
@@ -187,63 +237,72 @@
         </section>
 
         <section id="recommendations" class="mb-24 pt-16">
-            <h3 class="text-3xl font-header font-bold mb-10 text-slate-900 uppercase tracking-tight">Recommendations</h3>
+            <h3 class="text-3xl font-header font-bold mb-10 text-slate-900 uppercase tracking-tight">
+                <span class="lang-en">Recommendations</span><span class="lang-es">Recomendaciones</span>
+            </h3>
             <div id="carousel" class="relative bg-white border border-slate-200 p-8 rounded-3xl shadow-sm min-h-[160px] flex items-center">
                 <div class="testimonial-slide active">
-                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed">"Sylvana is an incredibly reliable professional. Her ability to streamline complex accounting workflows during her tenure at Kostyniuk & Greenside Lawyers was transformative."</p>
-                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— Colleague, Legal Industry</span>
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed lang-en">"Sylvana is an incredibly reliable professional. Her ability to streamline complex accounting workflows during her tenure at Kostyniuk & Greenside Lawyers was transformative."</p>
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed lang-es">"Sylvana es una profesional increíblemente confiable. Su capacidad para agilizar flujos de trabajo contables complejos durante su tiempo en Kostyniuk & Greenside Lawyers fue transformadora."</p>
+                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— <span class="lang-en">Colleague, Legal Industry</span><span class="lang-es">Colega, Industria Legal</span></span>
                 </div>
                 <div class="testimonial-slide hidden">
-                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed">"An absolute expert in financial operations. She consistently delivered accurate financial insights that were crucial for our annual budgeting process."</p>
-                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— Director, Safedesign Apparel</span>
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed lang-en">"An absolute expert in financial operations. She consistently delivered accurate financial insights that were crucial for our annual budgeting process."</p>
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed lang-es">"Una experta absoluta en operaciones financieras. Constantemente entregó información financiera precisa que fue crucial para nuestro proceso de presupuesto anual."</p>
+                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— <span class="lang-en">Director, Safedesign Apparel</span><span class="lang-es">Director, Safedesign Apparel</span></span>
                 </div>
                 <div class="testimonial-slide hidden">
-                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed">"Sylvana’s operational oversight and dedication to compliance ensured our clinical workflows ran with maximum efficiency and patient-focused care."</p>
-                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— Management, Eyecademy</span>
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed lang-en">"Sylvana’s operational oversight and dedication to compliance ensured our clinical workflows ran with maximum efficiency and patient-focused care."</p>
+                    <p class="text-lg italic text-slate-600 mb-4 leading-relaxed lang-es">"La supervisión operativa de Sylvana y su dedicación al cumplimiento aseguraron que nuestros flujos de trabajo clínicos funcionaran con máxima eficiencia y atención centrada en el paciente."</p>
+                    <span class="text-slate-900 font-bold tracking-widest text-xs uppercase">— <span class="lang-en">Management, Eyecademy</span><span class="lang-es">Gerencia, Eyecademy</span></span>
                 </div>
             </div>
         </section>
 
         <section id="education" class="mb-20">
-            <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">Education</h3>
+            <h3 class="text-3xl font-header font-bold mb-12 text-slate-900 uppercase tracking-tight">
+                <span class="lang-en">Education</span><span class="lang-es">Educación</span>
+            </h3>
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 border border-slate-200 rounded-xl">
-                    <h4 class="font-bold text-lg">Diploma, Accounting & Payroll</h4>
+                    <h4 class="font-bold text-lg"><span class="lang-en">Diploma, Accounting & Payroll</span><span class="lang-es">Diploma en Contabilidad y Nómina</span></h4>
                     <p class="text-slate-600 text-sm">Academy of Learning College, Toronto, ON</p>
                 </div>
                 <div class="bg-white p-6 border border-slate-200 rounded-xl">
-                    <h4 class="font-bold text-lg">Diploma, International Commerce & Finance</h4>
-                    <p class="text-slate-600 text-sm">National Polytechnic Institute, Mexico City</p>
+                    <h4 class="font-bold text-lg"><span class="lang-en">Diploma, International Commerce & Finance</span><span class="lang-es">Diploma en Comercio Internacional y Finanzas</span></h4>
+                    <p class="text-slate-600 text-sm">National Polytechnic Institute, <span class="lang-en">Mexico City</span><span class="lang-es">Ciudad de México</span></p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="max-w-2xl mx-auto border border-slate-200 bg-white rounded-2xl p-8 shadow-sm">
-            <h3 class="text-2xl font-header font-bold mb-6 uppercase tracking-tight text-slate-900">Get In Touch</h3>
+            <h3 class="text-2xl font-header font-bold mb-6 uppercase tracking-tight text-slate-900">
+                <span class="lang-en">Get In Touch</span><span class="lang-es">Contáctame</span>
+            </h3>
             <form action="https://formspree.io/f/xzdwkybj" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="md:col-span-2">
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Name</label>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"><span class="lang-en">Name</span><span class="lang-es">Nombre</span></label>
                     <input type="text" name="name" required class="w-full border-b border-slate-300 py-2 focus:border-amber-600 outline-none transition">
                 </div>
                 <div class="md:col-span-2">
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Company</label>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"><span class="lang-en">Company</span><span class="lang-es">Empresa</span></label>
                     <input type="text" name="company" class="w-full border-b border-slate-300 py-2 focus:border-amber-600 outline-none transition">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Phone</label>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"><span class="lang-en">Phone</span><span class="lang-es">Teléfono</span></label>
                     <input type="tel" name="phone" class="w-full border-b border-slate-300 py-2 focus:border-amber-600 outline-none transition">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Email</label>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"><span class="lang-en">Email</span><span class="lang-es">Correo Electrónico</span></label>
                     <input type="email" name="email" required class="w-full border-b border-slate-300 py-2 focus:border-amber-600 outline-none transition">
                 </div>
                 <div class="md:col-span-2">
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Comments</label>
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1"><span class="lang-en">Comments</span><span class="lang-es">Comentarios</span></label>
                     <textarea name="message" rows="3" class="w-full border-b border-slate-300 py-2 focus:border-amber-600 outline-none transition"></textarea>
                 </div>
                 <div class="md:col-span-2 flex gap-4 mt-4">
-                    <button type="submit" class="bg-slate-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-amber-600 transition">Submit</button>
-                    <button type="reset" class="bg-slate-100 px-8 py-3 rounded-lg font-bold text-slate-600 hover:bg-slate-200 transition">Clear</button>
+                    <button type="submit" class="bg-slate-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-amber-600 transition"><span class="lang-en">Submit</span><span class="lang-es">Enviar</span></button>
+                    <button type="reset" class="bg-slate-100 px-8 py-3 rounded-lg font-bold text-slate-600 hover:bg-slate-200 transition"><span class="lang-en">Clear</span><span class="lang-es">Limpiar</span></button>
                 </div>
             </form>
         </section>
@@ -252,8 +311,8 @@
     <footer class="bg-slate-950 text-slate-400 py-16">
         <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h4 class="text-white font-header text-2xl mb-4">Let's connect.</h4>
-                <p class="text-sm mb-6">Open to new challenges in financial operations, digital transformation, and strategic management.</p>
+                <h4 class="text-white font-header text-2xl mb-4"><span class="lang-en">Let's connect.</span><span class="lang-es">Conectemos.</span></h4>
+                <p class="text-sm mb-6"><span class="lang-en">Open to new challenges in financial operations, digital transformation, and strategic management.</span><span class="lang-es">Abierta a nuevos desafíos en operaciones financieras, transformación digital y gestión estratégica.</span></p>
                 <a href="mailto:sylvana77@hotmail.com" class="text-amber-500 font-bold hover:text-amber-400 transition">sylvana77@hotmail.com</a>
             </div>
             <div class="md:text-right">
